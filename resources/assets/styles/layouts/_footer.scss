@@ -3,7 +3,7 @@
     @apply text-white leading-normal border-none;
 
     &:hover {
-      @apply border-none text-black;
+      @apply border-none text-primary;
     }
   }
 
@@ -16,6 +16,12 @@
       font-size: 26px;
       padding: 0 10px;
       border: none;
+    }
+  }
+
+  .menu {
+    li {
+      @apply inline-block pl-5;
     }
   }
 }
