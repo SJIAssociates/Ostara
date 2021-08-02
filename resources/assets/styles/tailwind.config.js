@@ -15,13 +15,13 @@
 
 
 let colors = {
-  'primary': '#dc6e37',
+  'primary': '#5cc7de',
 
   'transparent': 'transparent',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
+  'grey-darker': '#5a5a5a',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
   'grey-light': '#dae1e7',
@@ -29,20 +29,10 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
-  'red-darkest': '#3b0d0c',
-  'red-darker': '#621b18',
-  'red-dark': '#cc1f1a',
-  'red': '#e3342f',
-  'red-light': '#ef5753',
-  'red-lighter': '#f9acaa',
-  'red-lightest': '#fcebea',
-
   'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
+  'blue-dark': '#009bb8',
+  'blue': '#5cc7de',
   'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
 
 }
@@ -58,7 +48,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': [
-        'benton-sans',
+        'Montserrat',
         '-apple-system',
         'Segoe UI',
         'Roboto',
