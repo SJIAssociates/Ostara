@@ -4,10 +4,13 @@
 
 .banner .nav a {
   @apply inline-block px-4 py-2 border-none lowercase text-grey-darkest;
+
+  font-weight: 500;
+  transition: all 0.4s;
 }
 
 .banner .nav a:hover {
-  @apply text-primary;
+  @apply text-blue-dark;
 }
 
 #menuToggle {
