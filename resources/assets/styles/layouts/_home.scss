@@ -1,7 +1,12 @@
 #landing {
   .container {
-    min-height: 600px;
+    min-height: 350px;
   }
+}
+
+#homeInfo {
+  overflow: hidden;
+  min-height: 700px;
 }
 
 .home {
@@ -12,23 +17,22 @@
 
 .home-circle {
   position: absolute;
-  right: 5%;
+  right: -10%; //5%;
   bottom: 10%;
   background: $primary;
   border-radius: 100%;
-  height: 45vw;
-  width: 45vw;
+  height: 125vw; //45vw;
+  width: 125vw; //45vw;
 
   p {
-    font-size: 1.25em;
+    font-size: 1em; //1.25em;
     line-height: 1.2em;
     position: relative;
     left: 50%;
     top: 50%;
-    -o-transform: translate(-25%, -25%);
     transform: translate(-45%, -50%);
     color: black;
-    width: 80%;
+    width: 72%; //80%;
   }
 }
 
@@ -39,6 +43,29 @@
       font-weight: 500;
       margin-bottom: 15px;
       font-size: 18px;
+    }
+  }
+}
+
+@screen sm {
+  .home-circle {
+    right: 5%;
+    bottom: 10%;
+    height: 45vw;
+    width: 45vw;
+
+    p {
+      font-size: 1.25em;
+      line-height: 1.2em;
+      width: 80%;
+    }
+  }
+}
+
+@screen md {
+  #landing {
+    .container {
+      min-height: 600px;
     }
   }
 }

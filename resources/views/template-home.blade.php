@@ -5,13 +5,12 @@
 @extends('layouts.app')
 
 @section('content')
-<section id='landing' class='home-section' style="background: url( @php echo site_url() . '/wp-content/themes/SJI_Theme_v3/dist/images/Background.jpg' @endphp ); background-size: cover; background-position: center center;">
+<section id='landing' class='home-section' style="background: url( @php echo site_url() . '/wp-content/themes/ostara/dist/images/Background.jpg' @endphp ); background-size: cover; background-position: center center;">
   <div class='container flex flex-col justify-center'>
     <div class='flex'>
-      <div class='w-1/2'>
-        <img src="@php echo site_url() . '/wp-content/themes/SJI_Theme_v3/dist/images/Ostara-logo.png' @endphp">
-        <img src=" @asset('images/Ostara-logo.png') ">
-        <p class='text-white font-bold text-4xl text-center'>We offer transformational<br>problem-solving.</p>
+      <div class='w-full md:w-1/2'>
+        <img src="@php echo site_url() . '/wp-content/themes/ostara/dist/images/Ostara-logo.png' @endphp" class='mb-5 mx-auto w-3/4 md:w-full' alt="Ostara Logo">
+        <p class='text-white font-bold text-2xl md:text-4xl text-center'>We offer transformational<br>problem-solving.</p>
       </div>
     </div>
   </div>
@@ -20,13 +19,13 @@
 <section class='relative' id='homeInfo'>
   <div class='container flex flex-col justify-center py-5 lg:py-24'>
     <div class='w-full' >
-      <div class='w-1/2'>
+      <div class='w-full md:w-1/2'>
         <p class='text-lg lg:text-2xl'>In a world of accelerating challenges, our values-driven boutique advisory firm—borne of 20+ years of dynamic executive leadership—offers strategic, customized solutions for growth and innovation. We have the proven experience and an expansive network to lead you through the critical decisions that will fuel positive change and create real value.</p>
       </div>
     </div>
     <div class='w-full relative lg:py-24 min-h-screen'>
-      <div class='w-1/2'>
-        <h2 class='leading-loose font-bold text-blue-dark text-4xl lg:mt-32'>We partner exclusively with open-minded, creative, courageous leaders and entrepreneurs.</h2>
+      <div class='w-full md:w-1/2'>
+        <h2 class='leading-normal md:leading-loose font-bold text-blue-dark text-2xl md:text-4xl lg:mt-32'>We partner exclusively with open-minded, creative, courageous leaders and entrepreneurs.</h2>
       </div>
     </div>
   </div>
@@ -37,8 +36,8 @@
 
 <section class='home-section bg-primary text-white' id='Homelist'>
   <div class='container flex flex-col justify-center py-5 lg:py-24'>
-    <h2 class='w-3/4 font-bold text-4xl mb-5 lg:mb-10'>We craft a custom approach to deliver measurable impact where it’s needed most.</h2>
-    <div class='flex flex-row'>
+    <h2 class='w-full md:w-3/4 font-bold text-2xl md:text-4xl mb-5 lg:mb-10'>We craft a custom approach to deliver measurable impact where it’s needed most.</h2>
+    <div class='flex flex-row flex-wrap'>
       <div class='w-full md:w-1/2 md:pr-10'>
         <ul class='text-black'>
         <li>Comprehensive market opportunity analysis</li>
