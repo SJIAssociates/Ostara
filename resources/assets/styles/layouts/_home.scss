@@ -9,6 +9,12 @@
   min-height: 700px;
 }
 
+#Homelist {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
 .home {
   .brand img {
     display: none;
@@ -37,14 +43,37 @@
 }
 
 .home-section {
+  padding: 1em 0;
+
   ul {
+    padding-left: 15px;
+
     li {
       line-height: 1.25em;
+      position: relative;
       font-weight: 500;
       margin-bottom: 15px;
       font-size: 18px;
+      padding-left: 5px;
+
+      &::before {
+        content: "›";
+        font-family: "Arial Black", serif;
+        position: absolute;
+        left: -10px;
+        top: -4px;
+        font-size: 1.5em;
+        color: white;
+      }
     }
   }
+}
+
+#line-1,
+#line-2,
+#line-3,
+#line-4 {
+  display: none;
 }
 
 @screen sm {
@@ -67,5 +96,46 @@
     .container {
       min-height: 600px;
     }
+  }
+
+  .home-circle {
+    right: 5%;
+    bottom: 10%;
+    height: 45vw;
+    width: 45vw;
+
+    p {
+      font-size: 1.25em;
+      line-height: 1.2em;
+      width: 80%;
+    }
+  }
+
+  #line-1 {
+    position: absolute;
+    display: block;
+    right: 25%;
+    height: 600px;
+  }
+
+  #line-2 {
+    position: absolute;
+    right: 25%;
+    display: block;
+    height: 807px;
+  }
+
+  #line-3 {
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    display: block;
+  }
+
+  #line-4 {
+    position: absolute;
+    right: 0%;
+    top: 0;
+    display: block;
   }
 }
