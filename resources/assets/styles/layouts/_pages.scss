@@ -1,10 +1,15 @@
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
 .entry-content {
   h2 {
     color: #000;
     border-top: 5px solid #dc6e37;
     padding-top: 8px;
     font-size: 1.1em;
-    font-weight: 800;
+    font-weight: 500;
     margin-top: 20px;
     margin-bottom: 15px;
     letter-spacing: 0.01em;
@@ -12,7 +17,7 @@
   }
 
   h3 {
-    @apply text-3xl text-black font-extrabold mt-5;
+    @apply text-3xl text-black mt-5;
 
     span {
       @apply text-primary;
@@ -53,14 +58,80 @@
   }
 }
 
+.service-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .service-icon {
+    width: 100%;
+
+    img {
+      width: 130px;
+      height: auto;
+      margin: 15px 0;
+    }
+  }
+
+  .service-description {
+    padding-left: 15px;
+
+    h2 {
+      @apply text-2xl mb-0;
+
+      font-weight: 500;
+    }
+  }
+}
+
 @screen md {
   .h-custom {
     min-height: 400px;
+  }
+
+  .service-wrap {
+    flex-direction: row;
+
+    .service-icon {
+      width: 150px;
+    }
+
+    .service-description {
+      flex: 1;
+    }
   }
 }
 
 @screen lg {
   .h-custom {
     min-height: 600px;
+  }
+
+  .service-wrap {
+    margin-bottom: 70px;
+    max-width: 75%;
+
+    .service-description {
+      padding-left: 15px;
+
+      h2 {
+        @apply text-4xl;
+      }
+    }
+  }
+
+  #services .container > div:nth-child(2) {
+    margin-left: 7vw;
+  }
+
+  #services .container > div:nth-child(3) {
+    margin-left: 10vw;
+  }
+}
+
+@screen xl {
+  .service-wrap {
+    margin-bottom: 150px;
+    max-width: 800px;
   }
 }
