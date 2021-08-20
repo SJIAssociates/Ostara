@@ -59,18 +59,6 @@ module.exports = {
         'Georgia',
         'serif',
       ],
-      'mono': [
-        'Menlo',
-        'Monaco',
-        'monospace',
-      ],
-      'display': [
-        'Open Sans Condensed',
-        '-apple-system',
-        'Segoe UI',
-        'Roboto',
-        'sans-serif',
-      ],
     },
     fontSize: {
       'xs': '.75rem',     // 12px
