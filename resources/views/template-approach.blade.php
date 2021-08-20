@@ -8,11 +8,11 @@
   <section id='landing' class='home-section'>
     <div class='container flex flex-col justify-center'>
       <div class='flex flex-wrap flex-row'>
-        <div class='w-full md:w-1/2 lg:flex lg:flex-col lg:justify-center'>
+        <div class='w-full md:w-1/2 md:flex md:flex-col md:justify-center'>
           <h1 class='m-0 text-4xl lg:text-6xl text-primary uppercase'>Our Approach</h1>
           <p class='text-lg lg:text-2xl text-grey-darkest'>We're a  boutique, premium advisory firm that acts as a strategic and creative transformation partner driven by these guiding principles:</p>
         </div>
-        <div class='w-full md:w-1/2 order-first lg:order-last lg:pl-24'>
+        <div class='w-full md:w-1/2 order-first md:order-last md:pl-24'>
           <img src="@php echo site_url() . '/wp-content/themes/ostara/dist/images/ApproachHeader.jpg' @endphp" class='mb-5 mx-auto w-3/4 md:w-full rounded-full' alt="Ostara Logo">
         </div>
       </div>
