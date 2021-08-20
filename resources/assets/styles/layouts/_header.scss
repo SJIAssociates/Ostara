@@ -1,57 +1,64 @@
-.banner .nav {
-  @apply list-none py-5 flex flex-wrap items-center;
-
-  a {
-    @apply inline-block px-4 py-2 border-none lowercase text-grey-darkest;
-
-    font-weight: 500;
-    transition: all 0.4s;
-
-    &:hover {
-      @apply text-blue-dark;
-    }
-  }
-
-  .btn {
-    margin: 0;
-    border-radius: 50em;
-    padding: 0;
-    position: relative;
-    border: 3px solid $primary;
-    background: none;
-    overflow: hidden;
-
-    &::before {
-      position: absolute;
-      content: " ";
-      left: 0;
-      top: 0;
-      bottom: 0;
-      background: $primary;
-      z-index: -1;
-      cursor: pointer;
-      width: 0;
-      transition: width 0.4s;
-    }
+.banner {
+  .nav {
+    @apply list-none py-5 flex flex-wrap items-center;
 
     a {
-      color: $primary;
-      padding: 15px 25px;
+      @apply inline-block px-4 py-2 border-none lowercase text-grey-darkest font-medium;
+
+      transition: all 0.4s;
+
+      &:hover {
+        @apply text-blue-dark;
+      }
     }
 
-    &:hover {
+    .btn {
+      margin: 0;
+      border-radius: 50em;
+      padding: 0;
+      position: relative;
+      border: 3px solid $primary;
+      background: none;
+      overflow: hidden;
+
       &::before {
-        width: 100%;
+        position: absolute;
+        content: " ";
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: $primary;
+        z-index: -1;
+        cursor: pointer;
+        width: 0;
+        transition: width 0.4s;
       }
 
       a {
-        color: white;
+        color: $primary;
+        padding: 15px 25px;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+
+        a {
+          color: white;
+        }
       }
     }
+  }
+
+  .brand {
+    @apply font-bold text-2xl uppercase border-none;
   }
 }
 
 #menuToggle {
+  @apply w-12 h-12 rounded-full shadow-lg  mt-5 mr-3 relative bg-blue-dark;
+
   outline: none;
   transition: transform 0.4s, background 0.4s;
   z-index: 1000;
@@ -91,20 +98,19 @@
 
   &.open {
     transform: rotate(180deg);
-    background: white;
 
     .menu-bar {
       background: none;
 
       &::before {
         transform: rotate(45deg);
-        background: $primary;
+        background: white;
         top: 0;
       }
 
       &::after {
         transform: rotate(-45deg);
-        background: $primary;
+        background: white;
         top: 0;
       }
     }

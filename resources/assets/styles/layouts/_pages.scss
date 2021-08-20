@@ -84,6 +84,32 @@
   }
 }
 
+#clientQuotes {
+  @apply bg-grey-darker;
+
+  blockquote {
+    line-height: 1.4em;
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin: 25px 0;
+
+    &::before {
+      content: url(../images/quoteMark.png);
+      top: 7px;
+      left: -52px;
+      width: 10px;
+      position: absolute;
+      transform: scale(0.2);
+      transform-origin: top;
+    }
+  }
+
+  .quotename {
+    color: darken($primary, 10%);
+  }
+}
+
 @screen md {
   .h-custom {
     min-height: 400px;
@@ -126,6 +152,27 @@
 
   #services .container > div:nth-child(3) {
     margin-left: 10vw;
+  }
+
+  #bioContainer {
+    img {
+      max-width: 70%;
+      height: auto;
+    }
+  }
+}
+
+@screen lg {
+  #bioContainer {
+    margin-top: -15vh;
+
+    img {
+      max-width: 350px;
+    }
+
+    > div:nth-child(1) {
+      margin-top: 25vh;
+    }
   }
 }
 

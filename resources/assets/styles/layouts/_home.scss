@@ -94,6 +94,28 @@
 @screen md {
   #landing {
     .container {
+      min-height: 400px;
+    }
+  }
+
+  .home-circle {
+    right: -8%;
+    bottom: 14%;
+    height: 65vw;
+    width: 65vw;
+
+    p {
+      font-size: 1em;
+      line-height: 1.2em;
+      width: 70%;
+      left: 46%;
+    }
+  }
+}
+
+@screen lg {
+  #landing {
+    .container {
       min-height: 600px;
     }
   }
@@ -114,27 +136,27 @@
   #line-1 {
     position: absolute;
     display: block;
-    right: 25%;
+    right: 140px;
     height: 600px;
   }
 
   #line-2 {
     position: absolute;
-    right: 25%;
+    right: 160px;
     display: block;
     height: 807px;
   }
 
   #line-3 {
     position: absolute;
-    right: 0%;
+    right: -45px;
     bottom: 0;
     display: block;
   }
 
   #line-4 {
     position: absolute;
-    right: 0%;
+    right: 1px;
     top: 0;
     display: block;
   }
