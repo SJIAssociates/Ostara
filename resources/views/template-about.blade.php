@@ -9,11 +9,11 @@
   <div class='container flex flex-col justify-center'>
     <div class='flex flex-wrap flex-row'>
       <div class='w-full md:w-1/2 lg:flex lg:flex-col lg:justify-center'>
-        <h1 class='m-0 text-4xl lg:text-6xl text-white uppercase'>About Us</h1>
-        <p class='text-lg text-white lg:text-2xl'>We bring over 20 years of C-suite leadership and operating experience in media, tech and the public sector. Along with our network of experts and resources, we assist companies and management teams to better realize their growth potential.</p>
+        <h1 class='m-0 text-4xl lg:text-6xl text-white uppercase'>{!! App::title() !!}</h1>
+        @if( $subtitle )<p class='text-lg text-white lg:text-2xl'>{!! $subtitle !!}</p>@endif
       </div>
       <div class='w-full md:w-1/2 order-first lg:order-last lg:pl-24'>
-        <img src="@php echo site_url() . '/wp-content/themes/ostara/dist/images/AboutHeader.jpg' @endphp" class='mb-5 mx-auto w-3/4 md:w-full rounded-full' alt="Ostara Logo">
+        <img src="@php echo get_the_post_thumbnail_url() @endphp" class='mb-5 mx-auto w-3/4 md:w-full rounded-full' alt="{!! App::title() !!}">
       </div>
     </div>
   </div>
@@ -33,8 +33,10 @@
 
           <?php the_row(); ?>
           <div class='person lg:w-1/2 text-center lg:px-24'>
-            <img src="<?php the_sub_field('profile_picture'); ?>" alt="<?php the_sub_field('name'); ?>" class='rounded-full mx-auto'>
-            <span class='font-medium text-lg lg:text-2xl py-5 block'><?php the_sub_field('name'); ?></span>
+            <a href="<?php the_sub_field('profile_link'); ?>" class='bio_link'>
+              <img src="<?php the_sub_field('profile_picture'); ?>" alt="<?php the_sub_field('name'); ?>" class='rounded-full mx-auto'>
+              <span class='font-medium text-lg lg:text-2xl py-5 block text-grey-darkest'><?php the_sub_field('name'); ?></span>
+            </a>
           </div>
       @endwhile
       @endif

@@ -29,7 +29,7 @@
     </div>
     <div class='w-full relative lg:py-32 lg:my-10 min-h-screen'>
       <div class='w-full md:w-1/2'>
-        <h2 class='leading-normal text-blue-dark text-2xl lg:text-4xl md:pt-10 lg:pt-4 md:mt-32'>We partner exclusively with open-minded, creative, courageous leaders and entrepreneurs.</h2>
+        <h2 class='leading-normal text-blue-dark text-2xl lg:text-4xl pt-10 lg:pt-0 md:mt-32'>We partner exclusively with open-minded, creative, courageous leaders and entrepreneurs.</h2>
       </div>
     </div>
   </div>
