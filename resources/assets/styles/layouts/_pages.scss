@@ -126,6 +126,28 @@
       flex: 1;
     }
   }
+
+  .bio_link {
+    img {
+      transition: all 0.4s;
+      border: 0 solid;
+    }
+
+    span {
+      transition: all 0.4s;
+    }
+  }
+
+  .bio_link:hover {
+    img {
+      transform: scale(1.1);
+      border-width: 10px;
+    }
+
+    span {
+      color: #333;
+    }
+  }
 }
 
 @screen lg {
@@ -174,11 +196,30 @@
       margin-top: 25vh;
     }
   }
+
+  #line2-1 {
+    bottom: 0;
+    z-index: 0;
+    right: 30px;
+  }
+
+  #line2-2 {
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    right: 30px;
+  }
 }
 
 @screen xl {
   .service-wrap {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     max-width: 800px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .min-h-screen {
+    min-height: auto !important;
   }
 }

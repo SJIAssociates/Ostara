@@ -78,15 +78,15 @@
 
 @screen sm {
   .home-circle {
-    right: 5%;
+    right: -7%;
     bottom: 10%;
-    height: 45vw;
-    width: 45vw;
+    height: 550px;
+    width: 550px;
 
     p {
-      font-size: 1.25em;
-      line-height: 1.2em;
-      width: 80%;
+      font-size: 1em;
+      width: 74%;
+      left: 46%;
     }
   }
 }
@@ -121,13 +121,13 @@
   }
 
   .home-circle {
-    right: 5%;
-    bottom: 10%;
-    height: 45vw;
-    width: 45vw;
+    right: 2%;
+    bottom: 15%;
+    height: 50vw;
+    width: 50vw;
 
     p {
-      font-size: 1.25em;
+      font-size: 1.15em;
       line-height: 1.2em;
       width: 80%;
     }
@@ -149,15 +149,63 @@
 
   #line-3 {
     position: absolute;
-    right: -45px;
+    right: -50px;
     bottom: 0;
+    height: 80%;
     display: block;
   }
 
   #line-4 {
     position: absolute;
-    right: 1px;
+    right: -59px;
+    height: 100%;
     top: 0;
     display: block;
+  }
+}
+
+@screen xl {
+  .home-circle {
+    right: 5%;
+    bottom: 15%;
+    height: 600px;
+    width: 600px;
+
+    p {
+      font-size: 1.25em;
+      width: 75%;
+      left: 47%;
+    }
+  }
+
+  #line-3 {
+    right: -30px;
+    bottom: 0;
+    height: 80%;
+  }
+
+  #line-4 {
+    right: -8px;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #Homelist {
+    min-height: auto;
+  }
+
+  #line-3 {
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  #line-3 {
+    right: 50px;
+  }
+
+  #line-4 {
+    right: 42px;
   }
 }
