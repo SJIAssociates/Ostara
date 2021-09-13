@@ -1,12 +1,39 @@
 #landing {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
   .container {
     min-height: 350px;
   }
 }
 
+.home-logo {
+  @apply mb-5 mx-auto w-3/4;
+
+  animation-delay: 0.5s;
+}
+
+.tagline {
+  @apply text-white text-2xl text-center font-medium;
+
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.home .animate__animated {
+  opacity: 0;
+}
+
 #homeInfo {
   overflow: hidden;
-  min-height: 700px;
+  min-height: 1030px;
+
+  .section-2 {
+    @apply w-full relative;
+
+    min-height: 600px;
+  }
 }
 
 #Homelist {
@@ -24,7 +51,7 @@
 .home-circle {
   position: absolute;
   right: -10%; //5%;
-  bottom: 10%;
+  bottom: 4%; //10%
   background: $primary;
   border-radius: 100%;
   height: 125vw; //45vw;
@@ -69,13 +96,6 @@
   }
 }
 
-#line-1,
-#line-2,
-#line-3,
-#line-4 {
-  display: none;
-}
-
 @screen sm {
   .home-circle {
     right: -7%;
@@ -92,6 +112,10 @@
 }
 
 @screen md {
+  #homeInfo {
+    min-height: 700px;
+  }
+
   #landing {
     .container {
       min-height: 400px;
@@ -120,6 +144,10 @@
     }
   }
 
+  #Homelist {
+    min-height: 820px;
+  }
+
   .home-circle {
     right: 2%;
     bottom: 15%;
@@ -127,40 +155,10 @@
     width: 50vw;
 
     p {
-      font-size: 1.15em;
       line-height: 1.2em;
-      width: 80%;
+      width: 70%;
+      left: 47%;
     }
-  }
-
-  #line-1 {
-    position: absolute;
-    display: block;
-    right: 140px;
-    height: 600px;
-  }
-
-  #line-2 {
-    position: absolute;
-    right: 160px;
-    display: block;
-    height: 807px;
-  }
-
-  #line-3 {
-    position: absolute;
-    right: -50px;
-    bottom: 0;
-    height: 80%;
-    display: block;
-  }
-
-  #line-4 {
-    position: absolute;
-    right: -59px;
-    height: 100%;
-    top: 0;
-    display: block;
   }
 }
 
@@ -178,34 +176,30 @@
     }
   }
 
-  #line-3 {
-    right: -30px;
-    bottom: 0;
-    height: 80%;
-  }
+  #Homelist {
+    min-height: auto;
+    height: auto;
 
-  #line-4 {
-    right: -8px;
-    height: 100%;
+    .container {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 650px;
+    }
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  #Homelist {
-    min-height: auto;
+  #Homelist .container {
+    min-height: 800px;
   }
 
-  #line-3 {
-    right: 0;
-  }
-}
-
-@media only screen and (min-width: 1700px) {
-  #line-3 {
-    right: 50px;
+  #landing {
+    .container {
+      min-height: 750px;
+    }
   }
 
-  #line-4 {
-    right: 42px;
+  #homeInfo .section-2 {
+    min-height: 800px;
   }
 }

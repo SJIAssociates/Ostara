@@ -1,0 +1,191 @@
+#pg3-line-1,
+#pg3-line-2,
+#pg3-line-3,
+#pg3-line-4,
+#line-1,
+#line-2,
+#line-3,
+#line-4 {
+  display: none;
+}
+
+@screen lg {
+  #line2-1 {
+    bottom: -2px;
+    z-index: -1;
+    right: -168px;
+  }
+
+  #line2-2 {
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    right: -119px;
+  }
+
+  #pg3-line-1 {
+    bottom: -2px;
+    display: block;
+    right: 15%;
+    z-index: -1;
+    width: 450px;
+
+    .sto {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 4px;
+    }
+  }
+
+  #pg3-line-2 {
+    top: -1px;
+    display: block;
+    right: 15%;
+    z-index: -1;
+    width: 450px;
+
+    .sto {
+      fill: none;
+      stroke: #5cc6dd;
+      stroke-width: 4px;
+    }
+  }
+
+  #pg3-line-3 {
+    bottom: -1px;
+    left: -15%;
+    z-index: -1;
+    width: 480px;
+    position: absolute;
+    display: block;
+
+    .sto {
+      fill: none;
+      stroke: #5cc6dd;
+      stroke-width: 6px;
+    }
+  }
+
+  #pg3-line-4 {
+    top: -7px;
+    left: -15%;
+    z-index: -1;
+    width: 480px;
+    position: absolute;
+    display: block;
+
+    .sto {
+      fill: none;
+      stroke: #fff;
+      opacity: 0.3;
+      stroke-width: 6px;
+    }
+  }
+
+  #line-1 {
+    position: absolute;
+    display: block;
+    right: 140px;
+    height: 600px;
+  }
+
+  #line-2 {
+    position: absolute;
+    right: 160px;
+    display: block;
+    height: 807px;
+  }
+
+  #line-3 {
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    height: 80%;
+    display: block;
+  }
+
+  #line-4 {
+    position: absolute;
+    right: -72px;
+    height: 100%;
+    top: 0;
+    display: block;
+  }
+}
+
+@screen xl {
+  #line-3 {
+    right: 5px;
+    bottom: 0;
+    height: 80%;
+  }
+
+  #line-4 {
+    right: 19px;
+    height: 100%;
+  }
+
+  #line2-1 {
+    bottom: 0;
+    z-index: -1;
+    right: 30px;
+  }
+
+  #line2-2 {
+    top: -1px;
+    right: 37px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #line-3 {
+    right: 0;
+  }
+
+  #line-4 {
+    right: 0;
+  }
+
+  #line2-1 {
+    right: 5.6%;
+  }
+
+  #line2-2 {
+    top: -1px;
+    right: 6%;
+  }
+
+  #pg3-line-3,
+  #pg3-line-4 {
+    width: 600px;
+  }
+
+  #line-1 {
+    right: 104px;
+    height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  #line-3 {
+    right: 50px;
+  }
+
+  #line-4 {
+    right: 42px;
+  }
+
+  #line2-1 {
+    right: 11.6%;
+  }
+
+  #line2-2 {
+    top: -1px;
+    right: 12%;
+  }
+
+  #pg3-line-1,
+  #pg3-line-2 {
+    right: 25%;
+  }
+}

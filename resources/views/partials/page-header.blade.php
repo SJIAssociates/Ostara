@@ -1,4 +1,4 @@
-<section id='landing' class='home-section bg-blue-dark'>
+<section id='landing' class='home-section bg-blue-dark pt-24 md:pt-0'>
   <div class='container flex flex-col justify-center'>
     <div class='flex flex-wrap flex-row'>
       <div class='w-full md:w-1/2 lg:flex lg:flex-col lg:justify-center'>
